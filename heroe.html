@@ -10,26 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet"> 
     <script src="js/jquery.min.js"></script>
     <script src="js/js.js"></script>
+    <script src="js/ajax.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 <body class="contenido-int scroll-suave">
 
-    <?php
-    session_start(); 
-    if(isset($_SESSION["elegido"])){
-        include "base.php";
-        $pj = $_SESSION["elegido"];
-    ?>
+   
 
     <div class="row align-items-center text-center fijar">
         <div class="col-sm-12 col-lg-6">
-            <a class="logo" href="index.php">
+            <a class="logo" href="index.html">
                 <img src="Imagenes/Boku_no_Hero_Academia_Logo.png" class="m-3 img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
             </a>
         </div>
         <div class="col-sm-12 col-lg-6">
-            <a class="nombre" href="#he">
-                <?php echo $array[$pj]["nombre"]; ?>
+            <a class="nombre" href="#he" id="nombre">
+                
             </a>
         </div>    
     </div>
@@ -45,33 +41,26 @@
     <main class="container">
         <section class="el" id="he">
 
-            <?php echo $array[$pj]["presentacion"]; ?>
 
         </section>
         <section class="seccion" id="personality">
       
-            <?php echo $array[$pj]["personalidad"]; ?>
 
         </section>
         <section class="seccion" id="appearance">
          
-            <?php echo $array[$pj]["apariencia"]; ?>
 
         </section>
         <section class="seccion" id="skill">
  
-            <?php echo $array[$pj]["habilidades"]; ?>
 
         </section>
         <section class="seccion" id="equipment">
         
-            <?php echo $array[$pj]["equipo"]; ?>
            
         </section>
     </main>
-    <?php
-    } 
-    ?>
+ 
     <footer>
         <div class="redes-sociales">
             <a href="https://www.facebook.com/FedeNu/" target="_blank"><i class="icono fab fa-facebook-square"></i></a>

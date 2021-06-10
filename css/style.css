@@ -84,17 +84,16 @@ html{
 /*** HEADER ***/
 /********************/
 
-.contenido-int header a, .fijar a:hover{
+.contenido-int header a, #nombre:hover{
     text-transform: uppercase;
     text-decoration: none;
 }
-.contenido-int a h2{
+#nombre{
     font-family: 'Coda Caption', sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
 }
-
 @media (min-width: 992px){
     .fijar{
         position: fixed;
@@ -110,10 +109,11 @@ html{
         width: 100%;
         max-width: 200px;
     }
-    .fijar a h2{
+    #nombre{
         color: #f9f104;
         text-shadow: 0 0 5px #f9f104;
-        font-size: 40px;
+        font-size: 50px;
+        transition: text-shadow .3s ease-in;
     }
     .contenido-int header{
         background-color: rgba(221,10,15, 0.9);
@@ -129,16 +129,23 @@ html{
         justify-content: center;
         padding: 1rem;
     }
-    .contenido-int header a{
+    .navegacion{
         font-size: 25px;
-        color: #f9f104;
-        text-shadow: 0 0 5px #f9f104;
         transition: text-shadow .5s ease-out;
         margin: auto 1rem;
     }
-    .contenido-int header a:hover{
-        text-shadow: 0 0 5px #0a0404;
-        transition: all .3s ease-in;
+    .sinSe{
+        color: #f9f104!important;
+        text-shadow: 0 0 5px #f9f104!important;
+    }
+    .sinSe:hover{
+        text-shadow: 0 0 5px #0a0404!important;
+        transition: all .3s ease-in!important;
+    }
+    
+    .seleccionado{
+        color: black!important;
+        text-shadow:"none";
     }
 }
 @media (max-width: 992px){
@@ -146,7 +153,7 @@ html{
         background-color: black;
         padding: 0;
     }
-    .fijar a h2{
+    #nombre{
         color: #dd0a0f;
         font-size: 35px; 
     }
@@ -159,7 +166,7 @@ html{
         display: none;
         padding: 1rem;
         font-size: 20px;
-        color: #f9f104!important;
+        color: #f9f104;
         margin: auto;
         width: 100%;
     }

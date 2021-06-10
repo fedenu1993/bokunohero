@@ -105,11 +105,12 @@ $(document).ready(function() {
                 });
 
                 // Cambiar de color segun categoria seleccionada
-            
-                $(".navegacion, h2").click(function (e){
+                $("#nombre").addClass("seleccionado");//
+                $(".cambiante").addClass("sinSe").click(function (e){
                     e.preventDefault();
-                    $(this).css({"color":"black","text-shadow":"none"});
-                    $(".navegacion, h2").not(this).css({"color":"#f9f104","text-shadow":"0 0 5px #f9f104"});
+                    $(this).addClass("seleccionado").removeClass("sinSe");
+                    $(".cambiante").not(this).removeClass("seleccionado").addClass("sinSe");
+
 
                 });
                 

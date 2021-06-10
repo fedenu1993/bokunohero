@@ -3,7 +3,9 @@ $(document).ready(function(){
     $("button").click(function(e) {
         e.preventDefault();
         var heroeElegido = this.value
-        window.location="heroe.html?elegido="+heroeElegido;
+        setTimeout(function() {
+            window.location="heroe.html?elegido="+heroeElegido;
+        }, 1500);
        
     });
 

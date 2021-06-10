@@ -64,7 +64,7 @@ $(document).ready(function() {
                 });
                 
                 // Desaparece menu al click .navegacion
-                $('.navegacion').click(function(){
+                $('.navegacion, #nombre').click(function(){
                     $('.navegacion').fadeOut(1000).css("display","none");
                 });
 

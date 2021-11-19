@@ -20,7 +20,7 @@ html{
         margin: 0.5rem auto;
         font-weight: bold;
         font-size: 60px;
-        font-family: 'Coda Caption', sans-serif;
+        font-family: 'Coda Caption', Verdana, Arial, Helvetica, sans-serif;
         color: #f9f104;
         transform: perspective(150px) rotateX(20deg);
     }
@@ -57,7 +57,7 @@ html{
     .letras{
         font-weight: bold;
         font-size: 8vh;
-        font-family: 'Coda Caption', sans-serif;
+        font-family: 'Coda Caption', Verdana, Arial, Helvetica, sans-serif;
         color: #212529;
     }
     .btn-prota{
@@ -93,7 +93,7 @@ html{
     text-decoration: none;
 }
 #nombre{
-    font-family: 'Coda Caption', sans-serif;
+    font-family: 'Coda Caption', Verdana, Arial, Helvetica, sans-serif;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -194,7 +194,7 @@ html{
 /********************/
 
 .contenido-int{
-    font-family: 'Zen Dots', cursive;
+    font-family: 'Zen Dots', Verdana, Arial, Helvetica, sans-serif;
     text-align: justify;
     font-size: 20px;
     color: #0a0404;
